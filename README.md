@@ -3,6 +3,7 @@ This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on ac
 
 # Distinguishing Antient Chinese Written Characters
 https://www.nature.com/articles/s41597-024-02933-w
+GitHub: https://github.com/wm-bupt/oracle-mnist
 
 # To Do:
 

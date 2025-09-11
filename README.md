@@ -1,4 +1,4 @@
-# First_data_challenge
+# Our First data challenge
 This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on activity.
 
 # Distinguishing Antient Chinese Written Characters

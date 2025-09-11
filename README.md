@@ -1,7 +1,7 @@
 # Our First data challenge
 This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on activity.
 
-# Distinguishing Antient Chinese Written Characters
+# Distinguishing Ancient Chinese Written Characters
 - Paper: https://www.nature.com/articles/s41597-024-02933-w
 - GitHub (Oracle-MNIST): https://github.com/wm-bupt/oracle-mnist
 

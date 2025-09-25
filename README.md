@@ -16,4 +16,12 @@ This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on ac
 
 - NN set up
   - brainstorm on possible architectures
-  - Start with the MNIST CNN (LeCun)? 
+  - Start with the MNIST CNN (LeCun)
+    - Follow installation instructions here: http://d2l.ai/chapter_installation/index.html
+    - In short: if you  already have anaconda:
+      1. create a new environment `conda create --name d2l python=3.9 -y`
+      2. activate the invironment `conda activate d2l`
+      3. install the needed packages: 
+          `pip install torch==2.0.0 torchvision==0.15.1`
+          `pip install d2l==1.0.3`
+

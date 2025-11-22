@@ -19,8 +19,13 @@ This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on ac
   - Start with the MNIST CNN (LeCun)
   - Modify to get better performances
 
+______________________________________
 
-# Observations
+# Results
+our final architecture and results are reported in the images below.
+Our final test accuracy (defined as the fraction of correct predictions on the total sample) is : 90.17% (Pure LeNet was giving 52.20%)
+
+## Observations
 - Switching from Sigmoid() to ReLU() initially caused the loss to explode to ~10⁴.
   - Root cause: images were still in uint8 format.
   - Fix: convert to float32 and normalize pixel values to the range [0,1].

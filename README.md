@@ -25,7 +25,9 @@ ______________________________________
 Qur final architecture and results are reported in the images below.
 ![Modified LeNet](https://github.com/AI-Journal-Club/First_data_challenge/blob/main/images/LeNet_v2.png)
 
-**Our final test accuracy** (defined as the fraction of correct predictions on the total sample) is : **90.17%** (Pure LeNet was giving 52.20%)
+![Training performance](https://github.com/AI-Journal-Club/First_data_challenge/blob/main/images/LeNet_v2_training.png)
+
+**Our final test accuracy** (defined as the fraction of correct predictions on the total sample) is : **90.87%** (Pure LeNet was giving 80% after 60 Epochs)
 
 ## Observations
 - Switching from Sigmoid() to ReLU() initially caused the loss to explode to ~10⁴.

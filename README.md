@@ -22,8 +22,9 @@ This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on ac
 ______________________________________
 
 # Results
-our final architecture and results are reported in the images below.
-Our final test accuracy (defined as the fraction of correct predictions on the total sample) is : 90.17% (Pure LeNet was giving 52.20%)
+Qur final architecture and results are reported in the images below.
+
+**Our final test accuracy** (defined as the fraction of correct predictions on the total sample) is : **90.17%** (Pure LeNet was giving 52.20%)
 
 ## Observations
 - Switching from Sigmoid() to ReLU() initially caused the loss to explode to ~10⁴.

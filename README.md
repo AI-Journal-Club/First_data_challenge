@@ -24,6 +24,7 @@ ______________________________________
 # Results
 Qur final architecture and results are reported in the images below.
 
+
 **Our final test accuracy** (defined as the fraction of correct predictions on the total sample) is : **90.17%** (Pure LeNet was giving 52.20%)
 
 ## Observations

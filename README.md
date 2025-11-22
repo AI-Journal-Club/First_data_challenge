@@ -5,7 +5,7 @@ This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on ac
 - Paper: https://www.nature.com/articles/s41597-024-02933-w
 - GitHub (Oracle-MNIST): https://github.com/wm-bupt/oracle-mnist
 
-# To Do:
+# Steps:
 
 - Data pre-processing
   - Download the data: [from this repo](https://drive.usercontent.google.com/download?id=1gPYAOc9CTvrUQFCASW3oz30lGdKBivn5&export=download&authuser=0) - Credits: Oracle-NMIST Team
@@ -17,11 +17,24 @@ This is a test. The LSU Interdisciplinary AI-JC attempting the first hands-on ac
 - NN set up
   - brainstorm on possible architectures
   - Start with the MNIST CNN (LeCun)
-    - Follow installation instructions here: http://d2l.ai/chapter_installation/index.html
-    - In short: if you  already have anaconda:
-      1. create a new environment `conda create --name d2l python=3.9 -y`
-      2. activate the invironment `conda activate d2l`
-      3. install the needed packages: 
-          `pip install torch==2.0.0 torchvision==0.15.1`
-          `pip install d2l==1.0.3`
+  - Modify to get better performances
 
+
+# Observations
+- Switching from Sigmoid() to ReLU() initially caused the loss to explode to ~10⁴.
+  - Root cause: images were still in uint8 format.
+  - Fix: convert to float32 and normalize pixel values to the range [0,1].
+
+- Pooling comparison: 
+  - Replacing AvgPool2d with MaxPool2d degraded performance. The model ran better with AvgPool2d, so we reverted the change.
+
+- Dropout experiments to mitigate overfitting:  
+  - Dropout(0.2): produced a small improvement.
+  - Dropout(0.5): significantly improved generalization — reaching ~90% validation accuracy.
+
+## What We Did Not Try
+
+- Data augmentation (e.g., rotations, translations, flips, noise injection)
+- Deeper architecture (e.g., additional convolutional blocks or more filters). 
+
+Both directions could further improve performance.
